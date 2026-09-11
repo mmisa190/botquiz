@@ -18,7 +18,12 @@ async def on_message(message: Message):
     if message.content == "/start":
         await message.reply(
             "🎌 سلام! به Anime Quiz خوش اومدی!\n\n"
-            "آماده‌ای؟ 😎"
+            "اسم انیمه‌ای که می‌خوای ازش سوال بپرسم رو بنویس 👇"
+        )
+    else:
+        await message.reply(
+            f"👌 انیمه انتخاب شد: {message.content}\n\n"
+            "حالا آماده‌ای برای سوال‌ها؟ 😎"
         )
 
 
